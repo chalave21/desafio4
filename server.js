@@ -1,8 +1,6 @@
-const express = require("express");
-const app1 = require("./app");
-require("dotenv").config();
 
-const app = express();
+const app = require("./app");
+require("dotenv").config();
 const productos = [{title: "mouse", price: 2000, id:1},{title:"smatwatch", price:15000, id:2},{title:"laptop", price:200000, id:3}];
 
 app.get("/api/productos",(_req,res)=>{
